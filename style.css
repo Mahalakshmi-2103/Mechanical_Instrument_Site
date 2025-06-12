@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    text-wrap: pretty;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #232529;
+}
+
+:root {
+    --primaryColor: rgb(247, 164, 69);
+    --secondaryColor: #000000;
+    --darkColor: #232529;
+    --lightColor: #ffffff;
+    --regularFont: 16px;
+    --headingFont: 20px;
+    --primaryFontFamily: "Lora", serif;
+    --secondaryFontFamily: "Henny Penny", system-ui;
+    /* --headingFont: "Merienda", serif; */
+
+}
+
+/* SCROLL BAR CODE STARTS HERE */
+::-webkit-scrollbar {
+    width: 1.5rem;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #838080;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 249, 249);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* SCROLL BAR CODE ENDS HERE */
+
+/* Button */
+button {
+    background-color: rgb(247, 164, 69);
+    font-family: "Lora", serif;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    /* border-radius: 3rem; */
+    padding: 1rem 4rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(61, 41, 18);
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+h1,
+h2,
+h3,
+p {
+    /* text-wrap: balance; */
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+img,
+canvas,
+picture,
+video,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+.componentSpace {
+    padding: 3rem 0rem;
+}
+
+.screenSize {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    /* font-family:"Henny Penny", system-ui ; */
+    font-size: 50px;
+    font-weight: 900;
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    /* font-family:"Lora", serif; */
+    font-size: 35px;
+    color: rgb(247, 164, 69);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 3rem 0rem;
+}
+
+li {
+    list-style-type: none;
+    color: #000000;
+}
+
+li:hover {
+    background: rgb(154, 189, 255);
+    border-radius: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding: 0rem 2rem;
+    font-weight: 500;
+}
+
+p {
+    color: #3f4146;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 3rem 0rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 1rem;
+}
+
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1rem;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-start {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+header {
+    /* background-color: #13c6bd; */
+    width: 100%;
+    /* Full Screensize */
+    height: auto;
+    /* content Height */
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    /* background-color: #89f357; */
+    width: 100%;
+    height: auto;
+}
+
+.logoBox figure img {
+    width: auto;
+    height: 75px;
+    padding-left: 7rem;
+}
+
+.navBox {
+    padding: 2rem 0rem;
+}
+
+.navBox {
+    height: 100%;
+    width: 100%;
+    /* to check in responsive*/
+}
+
+.navBox #ham {
+    cursor: pointer;
+    display: none;
+}
+
+.navBox .dropDown {
+    color: #0e0d0d80;
+    font-size: 25px;
+    border: 1px solid #13121280;
+    padding: 1px 8px;
+    border-radius: 0.3rem;
+    display: none;
+
+}
+
+.hero {
+    background: url(./assets/image/hero2.jpg);
+    /* background: linear-gradient(70deg, white, transparent 70%), url(./assets/image/hero2.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13rem 0rem;
+    margin-bottom: 4rem;
+}
+
+.heroBox{
+    margin-bottom: 10rem;
+    width:90% ;
+}
+.hero p {
+    padding: 0rem 0rem;
+}
+
+button {
+    margin: 1rem 0rem;
+}
+
+.image img {
+    width: auto;
+    height: 4px;
+}
+
+.cardHeader figure img {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.contact {
+    background: rgb(119, 178, 255);
+
+}
+
+.contact h3 {
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+}
+
+.followBox ul li i {
+    padding: 0rem 1rem;
+    font-size: 30px;
+}
+
+.blue {
+    color: rgb(21, 21, 131);
+}
+
+.pink {
+    color: rgb(102, 16, 44);
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: #000000;
+}
+
+.copyrightBox {
+    margin-top: 3rem;
+    border-top: 2px solid #000000;
+}
+
+.copyrightBox p {
+    color: #000000;
+    font-weight: 400;
+}
+
+/* .vernierBlock{
+    border: #4a8ff7 2px solid;
+    border-radius: 10px;
+    margin: 0rem 1rem;
+    padding: 2rem 1rem 0rem 1rem;
+} */
+/* .microBlock{
+    border: #4a8ff7 2px solid;
+    border-radius: 10px;
+    margin: 0rem 1rem;
+    padding: 2rem 1rem 0rem 1rem;
+} */
+/* .dialBlock{
+    border: #4a8ff7 2px solid;
+    border-radius: 10px;
+    margin: 0rem 1rem;
+    padding: 2rem 1rem 0rem 1rem;
+} */
+/* .heightBlock{
+    border: #4a8ff7 2px solid;
+    border-radius: 10px;
+    margin: 0rem 1rem;
+    padding: 2rem 1rem 0rem 1rem;
+} */
+
+@media (max-width: 576px) {
+
+    .grid-1,
+    .grid-2 {
+        grid-template-columns: 1fr;
+        padding: 0rem 1rem;
+    }
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .contactBox h3{
+        padding: 2rem 0rem 0.2rem 0rem;
+    }
+    .quickBox h3{
+   padding: 2rem 0rem 0.5rem 0rem;
+    }
+
+    p {
+        padding: 2rem 1rem;
+        font-size: 10px;
+        color: #000000;
+    }
+
+    .logoBox figure img {
+        width: auto;
+        height: 65px;
+        padding: 0.3rem 2rem;
+        margin-top: 1rem;
+    }
+
+    .navBox .dropDown {
+        display: block;
+        position: absolute;
+        top: 2.4rem;
+        right: 5.5rem;
+        cursor: pointer;
+    }
+
+    .hero {
+        margin-bottom: 1rem;
+        padding: 15rem 0rem;
+    }
+    .herosBox{
+        display: none;
+    }
+    .heroBox{
+    margin-bottom: 1rem;
+    width:101% ;
+}
+
+    .navLinks {
+        flex-direction: column;
+        display: none;
+    }
+
+    #ham:checked~.navLinks {
+        display: flex;
+    }
+}
+
+/* tablet */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .grid-2 {
+        grid-template-columns: 1fr 1fr;
+        padding: 0rem 1rem;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        padding: 2rem 2rem;
+        font-size: 13px;
+        text-wrap: pretty;
+    }
+}
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (min-width: 769px) and (max-width: 992px) */
+
+@media (min-width:769px) and (max-width: 992px) {
+    .grid-2 {
+        grid-template-columns: 1fr 1fr;
+        padding: 0rem 1rem;
+    }
+
+}
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+/* @media (min-width: 993px) and (max-width: 1200px) */
+@media (min-width:993px) and (max-width:1200px) {
+    /* write code here */
+}
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+/* @media (min-width: 1200px)  */
+@media (width:1200px) {
+    /* write code here */
+}
